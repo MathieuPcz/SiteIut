@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Bon de commande</title>
+	<style>
+	body{
+		
+	}
+	h2{
+		color:black;
+	}
+	input{
+		border:none;
+		height: 30px;
+		width: 150px;
+		text-align: center;
+		background-color: black;
+		border-radius:3px;
+		font-family: calibri;
+		color:white;
+	}
+	button{
+		border:none;
+		height: 30px;
+		width: 80px;
+		border-radius: 3px;
+		cursor: pointer;
+		background:#e18728;
+		font-family: calibri;
+		color:white;
+	}
+	button:hover{
+		background-color:rgb(51,204,255);
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+	}
+	</style>
+</head>
+<body>
+	<h2>Calcul du prix de réduction</h2>
+<form>
+	<input type="text" placeholder="Votre ville" name="ville" id="ville" required>
+	<input type="text" placeholder="Votre âge" name="age" id="age" required>
+	<input type="text" placeholder="Prix du produit en €" name="prix" id="prix" required>
+	<button type="button" id="envoyer">Envoyer</button>
+	<div id="info"></div>
+</form>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#envoyer').click(function(){
+		$.ajax({
+		type: "post",
+		url: "reduction.php",
+		data: {
+			'age' : $('#age').val(),
+			'ville' : $('#ville').val(),
+			'prix' : $('#prix').val()
+			},
+			success: function(data){
+				if(data != "veuillez remplir tout les champs"){
+				$('#info').css('color','green');
+				$('#info').html(data);
+				
+				} else { 
+					$('#info').html(data).fadeIn(1000);
+					$('#info').css('color','red');
+					
+				}
+			}
+		});
+	});
+})
+	
+</script>
+

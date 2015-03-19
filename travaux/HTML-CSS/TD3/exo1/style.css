@@ -1,0 +1,39 @@
+*{
+	margin: 2%;
+}
+.moncontenu{
+	padding: 5px;
+	padding-top: 0px;
+	border:1px dotted black;
+	width: 200px;
+	text-align: justify;
+}
+.tailles{
+	width:205px;
+	height: 167px;
+	background-color: #00CCCB;
+}
+.fond-image{
+	width:205px;
+	height: 167px;
+	background: url('canard.jpg') center 30%;
+	text-align: center;
+}
+.fond-image h2{
+	font-family: calibri;
+	color:  #00CCCB;
+}
+a{
+	color:black;
+}
+a:hover{
+	text-decoration: none;
+}
+a:visited{
+	color:red;
+}
+a:active{
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.5em;
+}

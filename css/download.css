@@ -1,0 +1,23 @@
+#download{
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#titreDownload{
+	width: 100%;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+	text-align: center;
+}
+#download h3{
+	border-bottom:3px solid #ed4040;
+	display: inline-block;
+}
+#download a{
+	margin-left: 5%;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.5em;
+	text-shadow: 0 1px 0 #000;
+}

@@ -1,0 +1,39 @@
+*{
+	text-align: center;
+}
+body{
+	width: 800px;
+	margin: auto;
+	margin-top: 2%;
+}
+header{
+	width:800px;
+	height: 70px;
+	
+}
+#sidebar-gauche{
+	height:500px;
+	width: 100px;
+	float: left;
+	
+}
+#sidebar-droite{
+	height:500px;
+	width:100px;
+	float: right;
+	
+}
+#mon-contenu{
+	height:500px;
+	width:600px;
+	margin-left: 100px;
+	
+}
+footer{
+	height: 30px;
+	
+}
+header,#sidebar-gauche,#sidebar-droite,#mon-contenu,footer{
+	background-color: #00CCCB;
+	border:1px solid black;
+}

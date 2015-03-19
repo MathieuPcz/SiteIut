@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+ font-family:Verdana;
+ background: #f3f3f3;
+ margin:auto;
+ text-align: center;
+}
+
+nav{
+	border-top:1px dotted black;
+	border-bottom:1px dotted black;
+}
+nav ul{
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	vertical-align: top;
+	margin:10px;
+}
+nav a{
+	text-decoration: none;
+	color:  #ff6161;
+}
+table{
+	margin-left: 28%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+p{
+	margin: 2%;
+}
+.content,footer{
+	margin-top: 2%;
+}
+footer{
+	background-color: black;
+	color: white;
+	bottom:0;
+	width: 100%;
+}
